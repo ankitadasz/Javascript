@@ -6,3 +6,5 @@ let ans=true;
 console.log(typeof ans);
 let temp=null;
 console.log(typeof temp);
+let state;
+console.log(typeof state);
