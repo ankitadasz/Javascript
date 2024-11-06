@@ -1,4 +1,5 @@
 "use strict";
+//Data types in java
 let age=18;
 console.log(typeof age);
 let name="Ankita";
