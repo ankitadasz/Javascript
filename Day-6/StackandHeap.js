@@ -16,4 +16,17 @@ let Hername=MyName;
  userTwo.id = "gfhf"
  console.log(userOne);
  console.log(userTwo);
+
+
+
+
+
+ let Myacc = {
+      email:"ankita",
+      roll:"10"
+ }
  
+ let Mybank=Myacc;
+ Mybank.email="bkash";
+ console.log(Myacc);
+ console.log(Mybank);
