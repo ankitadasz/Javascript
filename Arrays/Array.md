@@ -1,1 +1,1 @@
-const my
+slice and splice difference:
