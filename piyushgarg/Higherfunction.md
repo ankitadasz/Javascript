@@ -1,1 +1,1 @@
-A 
+A function which takes another function as an argument is known as Higher order function
