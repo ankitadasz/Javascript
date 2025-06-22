@@ -32,13 +32,17 @@
 // const sayHello = () => {
 //     console.log("Hello guys")
 // }
-// sayHello();
+// // sayHello();
 
-const obj = {
-    value:20,
-    myFunction: () => {
-        console.log("value is:"+this);
+// const obj = {
+//     value:20,
+//     myFunction: () => {
+//         console.log("value is:"+this);
         
-    },
-    };
-    obj.myFunction();
+//     },
+//     };
+//     obj.myFunction();
+
+
+const add=(a,b)=>  a+b;
+console.log(add(2,3));

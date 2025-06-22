@@ -28,3 +28,8 @@ const sayHello = () => {
 - When you use `this` in a **normal function**, it refers to the object.
 - When you use `this` in an **arrow function**, it refers to the global `window` object because arrow functions do not have their own `this` context.
 
+///****** BASIC DIIFERENCE BETWEEN NORMAL AND ARROW FUNCTION *******\\\
+1ST THING IS THE SYNTAX 
+2ND THING IS YOU CAN USE ARGUMENTS IN NOMAL FUNCTION BUT CANT USE IT IN ARRRPW FUNCTION YOU HAVE TO USED SPREAD OPERATOR
+3RD THING IS HOISTING IN NORMAL FUNCTION IF YOU CALL THE FUNCTION BEFORE DECLARING THEN IT WILL CALL IT BUT IN CASE OG ARRPW IT WILL NOT WORK YOU HAVE TO CALL IT AFTER DECLARING IT
+4TH IS THIS KEYWORD
