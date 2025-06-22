@@ -23,4 +23,7 @@ students.push("heyyyy")
 console.log(students)
 
 const myArray=[1,"hsg","😘","ds"]
+myArray.push({Boolean:true})
+myArray.pop()
+myArray.reverse();
 console.log(myArray)
