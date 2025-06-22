@@ -8,6 +8,10 @@ const students=["ank","Kum","Ady","farhee"]
 // const myArr=["Ankita",true,1,"😘😘"]
 // myArr.push("👌👌👌")
 // myArr.pop("Ankita")
-// students.pop();
-students.reverse()
-console.log(students);
+// // students.pop();
+// students.reverse()
+// console.log(students);
+
+
+
+students.forEach()
