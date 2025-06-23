@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ankita</title>
+    <style>
+      .red-color {
+        color: red;
+      }
+      .underline {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
     //qs selects the 1st elements and perform operation on it//
@@ -12,7 +20,10 @@
     </nav>
 
     <div class="block">
-      <h4>hey there my name is <span id="username">Ankita Das</span></h4>
+      <h4>
+        hey there my name is
+        <span  id="username">Ankita Das</span>
+      </h4>
       <p class="para">Here is a code for you</p>
       <pre><code>console.log('Hey there')</code></pre>
     </div>
@@ -22,14 +33,27 @@
 
       // code.innerHTML = "<h1>alert(hello)</h1>";
 
-      const ele=document.querySelectorAll(".block");
-      // ele.innerText="<h1>hii</h1>";
-      ele.forEach((e)=>{
-        console.log(e.innerHTML);
-        
-      })
-      console.log(ele);
-      
+      // const ele=document.querySelectorAll(".block");
+      // // ele.innerText="<h1>hii</h1>";
+      // ele.forEach((e)=>{
+      //   console.log(e.innerHTML);
+
+      // })
+      // console.log(ele);
+
+      const ele = document.getElementById("username");
+      ele.setAttribute('aria',"123")
+      ele.innerText = "kiuyt";
+      // console.log(ele.innerText);
+      // ele.classList.add('red-color',"underline");
+      ele.classList.remove("red-color");
+      console.log(ele.classList);
+      ele.style.textDecoration="underline";
+      ele.style.color="tomato";
+      console.log(ele.parentElement);
+      ele.parentElement.style.backgroundColor="yellow";
+      console.log(ele.id);
+      ele.remove();
       
     </script>
   </body>
