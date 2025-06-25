@@ -29,12 +29,12 @@ body{
  display: flex;
  flex-direction: column;
 justify-content: space-evenly;
-
+letter-spacing:0.2px;
+word-spacing: 0.5px;
 }
 .search{
   display: flex;
   justify-content: space-around;
-  letter-spacing: ;
 }
 #city{
 padding: 0.4em 1em ;
@@ -76,9 +76,7 @@ input:-webkit-autofill {
  border-radius: 50px;
  color: white;
  margin-right: 1.2rem;
-display: flex;
-justify-content: center;
-align-items: center;
+
  
 }
 #Search-Button:hover{
