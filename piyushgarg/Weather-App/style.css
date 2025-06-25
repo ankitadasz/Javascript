@@ -20,7 +20,6 @@ body{
 }
 .box{
   padding: 20px;
- background-color:#000000d0;
  width: 420px;         
  height: 300px;     
   max-width: 400px; 
@@ -31,13 +30,15 @@ body{
 justify-content: space-evenly;
 letter-spacing:0.2px;
 word-spacing: 0.5px;
+ background-color: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(5px); 
 }
 .search{
   display: flex;
   justify-content: space-around;
 }
 #city{
-padding: 0.4em 1em ;
+padding: 0.5rem 1rem ;
 width: 80%;
 height:2.3em;
 font-size: medium;
@@ -73,7 +74,7 @@ input:-webkit-autofill {
  background-color: #7c7c7c2b;
  border: none;
  outline: none;
- border-radius: 50px;
+ border-radius: 50%;
  color: white;
  margin-right: 1.2rem;
 
@@ -84,4 +85,16 @@ input:-webkit-autofill {
   background-color: #000000d0;
   transition: 0.2s ease-in-out;
 }
+h2{
+  font-size: 1.3rem;
+   
+  
+}
+p{
+  font-size: 0.8rem;
+ margin: 0.2rem 0;
+}
+p i, h2 i {
+  margin-right: 0.5em;
 
+}
