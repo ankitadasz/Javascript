@@ -34,10 +34,12 @@ justify-content: space-evenly;
 .search{
   display: flex;
   justify-content: space-around;
+  letter-spacing: ;
 }
 #city{
-padding: 0.4rem 1rem ;
+padding: 0.4em 1em ;
 width: 80%;
+height:2.3em;
 font-size: medium;
 border-radius: 30px;
 border: none;
@@ -45,15 +47,28 @@ outline: none;
 background-color: #7c7c7c2b;
 font-family: inherit;
 color: whitesmoke;
+box-shadow: none;
 }
 #city:hover,:focus{
   background-color: #000000d0;
   color:whitesmoke;
   cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #000000d0 inset !important;
+  -webkit-text-fill-color: whitesmoke !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  transition: background-color 5000s ease-in-out 0s;
 }
 #Search-Button{
-  width: 2.9em;
-  height: 2.9em;
+  width: 2.6em;
+  height: 2.6em;
  padding: 0.5rem;
  background-color: #7c7c7c2b;
  border: none;
@@ -61,6 +76,9 @@ color: whitesmoke;
  border-radius: 50px;
  color: white;
  margin-right: 1.2rem;
+display: flex;
+justify-content: center;
+align-items: center;
  
 }
 #Search-Button:hover{
