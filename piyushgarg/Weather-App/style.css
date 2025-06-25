@@ -1,58 +1,60 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
-body{
-  background-image: url('assets/weather.jpg'); 
-  background-size: cover;           
-  background-repeat: no-repeat;     
+body {
+  background-image: url("assets/weather.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Open Sans", sans-serif;
 }
-.box{
+.box {
   padding: 20px;
- width: 420px;         
- height: 300px;     
-  max-width: 400px; 
- color: white;
- border-radius: 30px;
- display: flex;
- flex-direction: column;
-justify-content: space-evenly;
-letter-spacing:0.2px;
-word-spacing: 0.5px;
- background-color: rgba(0, 0, 0, 0.5); 
-  backdrop-filter: blur(5px); 
+  width: 420px;
+  height: 300px;
+  max-width: 400px;
+  color: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  letter-spacing: 0.2px;
+  word-spacing: 0.5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
 }
-.search{
+.search {
   display: flex;
   justify-content: space-around;
 }
-#city{
-padding: 0.5rem 1rem ;
-width: 80%;
-height:2.3em;
-font-size: medium;
-border-radius: 30px;
-border: none;
-outline: none;
-background-color: #7c7c7c2b;
-font-family: inherit;
-color: whitesmoke;
-box-shadow: none;
+#city {
+  padding: 0.5rem 1rem;
+  width: 80%;
+  height: 2.3em;
+  font-size: medium;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: inherit;
+
+  box-shadow: none;
 }
-#city:hover,:focus{
+#city:hover,
+:focus {
   background-color: #000000d0;
-  color:whitesmoke;
+  color: whitesmoke;
   cursor: pointer;
   outline: none;
   border: none;
@@ -67,34 +69,30 @@ input:-webkit-autofill {
   box-shadow: none !important;
   transition: background-color 5000s ease-in-out 0s;
 }
-#Search-Button{
+#Search-Button {
   width: 2.6em;
   height: 2.6em;
- padding: 0.5rem;
- background-color: #7c7c7c2b;
- border: none;
- outline: none;
- border-radius: 50%;
- color: white;
- margin-right: 1.2rem;
-
- 
+  padding: 0.5rem;
+  background-color: #7c7c7c2b;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  color: white;
+  margin-right: 1.2rem;
 }
-#Search-Button:hover{
+#Search-Button:hover {
   cursor: pointer;
   background-color: #000000d0;
   transition: 0.2s ease-in-out;
 }
-h2{
+h2 {
   font-size: 1.3rem;
-   
-  
 }
-p{
+p {
   font-size: 0.8rem;
- margin: 0.2rem 0;
+  margin: 0.2rem 0;
 }
-p i, h2 i {
+p i,
+h2 i {
   margin-right: 0.5em;
-
 }
