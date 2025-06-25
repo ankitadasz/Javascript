@@ -96,3 +96,10 @@ p i,
 h2 i {
   margin-right: 0.5em;
 }
+
+@media(max-width:600px){
+  .box{
+    width: 300px;
+    max-width: 300px;
+  }
+}
