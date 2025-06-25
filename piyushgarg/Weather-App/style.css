@@ -26,5 +26,37 @@ body{
   max-width: 400px; 
  color: white;
  border-radius: 30px;
-  
+ display: flex;
+ flex-direction: column;
+justify-content: space-evenly;
+
 }
+.search{
+  display: flex;
+  justify-content: space-around;
+}
+#city{
+padding: 0.5rem ;
+width: 80%;
+font-size: medium;
+border-radius: 30px;
+border: none;
+outline: none;
+background-color: #7c7c7c2b;
+}
+#Search-Button{
+  width: 2.9em;
+  height: 2.9em;
+ padding: 0.5rem;
+ background-color: #7c7c7c2b;
+ border: none;
+ outline: none;
+ border-radius: 50px;
+ color: white;
+ margin-right: 1.2rem;
+ 
+}
+#Search-Button:hover{
+  cursor: pointer;
+}
+
