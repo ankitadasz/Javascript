@@ -36,13 +36,20 @@ justify-content: space-evenly;
   justify-content: space-around;
 }
 #city{
-padding: 0.5rem ;
+padding: 0.4rem 1rem ;
 width: 80%;
 font-size: medium;
 border-radius: 30px;
 border: none;
 outline: none;
 background-color: #7c7c7c2b;
+font-family: inherit;
+color: whitesmoke;
+}
+#city:hover,:focus{
+  background-color: #000000d0;
+  color:whitesmoke;
+  cursor: pointer;
 }
 #Search-Button{
   width: 2.9em;
@@ -58,5 +65,7 @@ background-color: #7c7c7c2b;
 }
 #Search-Button:hover{
   cursor: pointer;
+  background-color: #000000d0;
+  transition: 0.2s ease-in-out;
 }
 
