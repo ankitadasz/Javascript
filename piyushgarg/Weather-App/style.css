@@ -1,0 +1,30 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-image: url('assets/weather.jpg'); 
+  background-size: cover;           
+  background-repeat: no-repeat;     
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+.box{
+  padding: 20px;
+ background-color:#000000d0;
+ width: 420px;         
+ height: 300px;     
+  max-width: 400px; 
+ color: white;
+ border-radius: 30px;
+  
+}
