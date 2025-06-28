@@ -1,8 +1,10 @@
-function init(name){
-    function displayName(){
-        console.log(name);
-    }
-    return displayName;
+function Adder(num){
+       function add(b){
+        console.log(num+b);
+       }
+       return add;
 }
-let op=init("piyush");
-op();
+
+const addTo5= Adder(5);
+addTo5(2);
+addTo5(20);
