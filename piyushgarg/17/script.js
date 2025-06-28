@@ -1,9 +1,8 @@
-function init(){
-    const name="ankita";
+function init(name){
     function displayName(){
         console.log(name);
     }
     return displayName;
 }
-let op=init();
+let op=init("piyush");
 op();
