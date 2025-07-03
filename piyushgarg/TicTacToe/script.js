@@ -16,7 +16,7 @@ if (
 ) {
   document.getElementById("result").innerHTML = `
   <div class="result">Winner is ${currentPlayer}</div>
-  <div class="result">Refresh to play again 🕹️</div>`;
+  <div class="result">Refresh to play again...🕹️</div>`;
 gameOver = true;
 
   return;
@@ -25,7 +25,7 @@ gameOver = true;
 if(!arr.some((e) => e ===null)) {
    document.getElementById("result").innerHTML = `
   <div class="result">It's a Tie</div>
-  <div class="result">Refresh to play again 🕹️</div>`;
+  <div class="result">Refresh to play again...🕹️</div>`;
 gameOver = true;
     return;
 }
