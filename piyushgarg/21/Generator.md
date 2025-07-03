@@ -1,0 +1,1 @@
+Iterators and Generators bring the concept of iteration directly into the core language and provide a mechanism for customizing the behaviour of for...of loops
