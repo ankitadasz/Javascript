@@ -14,12 +14,16 @@ if (
   (arr[0] !== null && arr[0] === arr[4] && arr[4] === arr[8]) ||
   (arr[2] !== null && arr[2] === arr[4] && arr[4] === arr[6])
 ) {
-  document.write(`Winner is${currentPlayer}`)
+  document.write(`Winner is${currentPlayer}<br>`)
+
+    document.write(`Refresh to paly again🕹️`)
+
   return;
   
 }
 if(!arr.some((e) => e ===null)) {
-    document.write(`It's a Tie`)
+    document.write(`It's a Tie<br>`)
+    document.write(`Refresh to paly again🕹️`)
     return;
 }
 

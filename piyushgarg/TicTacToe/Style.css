@@ -6,11 +6,12 @@
 body{
     font-family: 'Fredoka', sans-serif;
     font-size: 30px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(233,122,129,1) 0%, rgba(181,64,149,1) 100.2% );;
 }
 .column{
-    height: 65px;
-    width: 65px;
-    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+    border: 1.5px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
