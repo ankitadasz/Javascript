@@ -1,6 +1,6 @@
 let currentPlayer = "X";
 let arr = Array(9).fill(null);
-
+let gameOver = false;
 function checkWinner() {
 if (
   (arr[0] !== null && arr[0] === arr[1] && arr[1] === arr[2]) ||
@@ -14,16 +14,19 @@ if (
   (arr[0] !== null && arr[0] === arr[4] && arr[4] === arr[8]) ||
   (arr[2] !== null && arr[2] === arr[4] && arr[4] === arr[6])
 ) {
-  document.write(`Winner is${currentPlayer}<br>`)
-
-    document.write(`Refresh to paly again🕹️`)
+  document.getElementById("result").innerHTML = `
+  <div class="result">Winner is ${currentPlayer}</div>
+  <div class="result">Refresh to play again 🕹️</div>`;
+gameOver = true;
 
   return;
   
 }
 if(!arr.some((e) => e ===null)) {
-    document.write(`It's a Tie<br>`)
-    document.write(`Refresh to paly again🕹️`)
+   document.getElementById("result").innerHTML = `
+  <div class="result">It's a Tie</div>
+  <div class="result">Refresh to play again 🕹️</div>`;
+gameOver = true;
     return;
 }
 
@@ -33,7 +36,7 @@ if(!arr.some((e) => e ===null)) {
 function handleClick(el) {
    
   const id = Number(el.id);
-   if(arr[id]!=null){
+   if(arr[id]!=null||gameOver){
         return;
     }
   arr[id] = currentPlayer;

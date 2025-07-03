@@ -20,11 +20,18 @@ body{
     display: flex;
 }
 
-.container {
-    height: 100vh;
+.wrap{
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px;
+}
+#result{
+    min-height: 50px;
+    text-align: center;
+    
 }
 
 
