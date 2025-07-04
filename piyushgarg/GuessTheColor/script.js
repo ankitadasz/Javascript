@@ -12,6 +12,10 @@ function genrateRandomColorRGB() {
      return `rgb(${red},${green},${blue})`;
 
 }
+ function validateResult(el){
+   console.log(el.target);
+   
+ }
 function startGame(){
     randomcolor=genrateRandomColorRGB();
     colorcode.innerText=randomcolor;
@@ -20,6 +24,7 @@ function startGame(){
 
     for(let i=0;i<6;i++){
         const div=document.createElement('div');
+        div.addEventListener('click',validateResult);
         div.style.backgroundColor =  i === ansindex ? randomcolor :genrateRandomColorRGB();
         option.append(div);
     }
