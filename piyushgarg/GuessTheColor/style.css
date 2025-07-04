@@ -1,0 +1,11 @@
+#option > div{
+    height: 60px;
+    width: 60px;
+    border-radius: 20px;
+}
+#option{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 220px;
+}

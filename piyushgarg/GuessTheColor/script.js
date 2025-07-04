@@ -1,4 +1,6 @@
 const colorcode=document.getElementById("color-code");
+const option=document.getElementById("option");
+let randomcolor=null;
 function generateRandomNumber(min, max) {
      return min + Math.floor(Math.random() * (max - min + 1));
 }
@@ -10,4 +12,13 @@ function genrateRandomColorRGB() {
      return `rgb(${red},${green},${blue})`;
 
 }
-
+function startGame(){
+    randomcolor=genrateRandomColorRGB();
+    colorcode.innerText=randomcolor;
+    for(let i=0;i<6;i++){
+        const div=document.createElement('div');
+        div.style.backgroundColor = genrateRandomColorRGB();
+        option.append(div);
+    }
+}
+window.addEventListener('load',startGame());
