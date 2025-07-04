@@ -15,9 +15,12 @@ function genrateRandomColorRGB() {
 function startGame(){
     randomcolor=genrateRandomColorRGB();
     colorcode.innerText=randomcolor;
+    
+    const ansindex=generateRandomNumber(0,5);
+
     for(let i=0;i<6;i++){
         const div=document.createElement('div');
-        div.style.backgroundColor = genrateRandomColorRGB();
+        div.style.backgroundColor =  i === ansindex ? randomcolor :genrateRandomColorRGB();
         option.append(div);
     }
 }
