@@ -1,5 +1,22 @@
 const colorcode=document.getElementById("color-code");
 const option=document.getElementById("option");
+const scoreContain=document.getElementById("score");
+const op=document.getElementById('op');
+const correctMessages = [
+  "Correct! 🎉", 
+  "Nice pick!😃", 
+  "You nailed it!👍🏻", 
+  "Perfect match!👌", 
+  "Great job! 🎯"
+];
+
+const wrongMessages = [
+  "Wrong one 🙃", 
+  "Oops! Try again.😶", 
+  "Not quite...🤔", 
+  "That’s not it! 😏", 
+  "Missed it!🙄"
+];
 let randomcolor=null;
 let score=0;
 function generateRandomNumber(min, max) {
@@ -15,21 +32,28 @@ function genrateRandomColorRGB() {
 }
 function incrementStore(){
     score+=1;
-    document.getElementById("score").innerText=score;
+    scoreContain.innerText=score;
+    
 }
  function validateResult(el){
    console.log(el.target);
    const selectedColor=el.target.style.backgroundColor;
    if((randomcolor===selectedColor)){
     incrementStore();
+     const msg = correctMessages[Math.floor(Math.random() * correctMessages.length)];
+    op.innerText = msg;
    }
    else{
-   score=0;
+     const msg = wrongMessages[Math.floor(Math.random() * wrongMessages.length)];
+    op.innerText = msg;
+   
    }
-   window.localStorage('score',score)
+   localStorage.setItem('score',score)
    startGame() ;
  }
 function startGame(){
+    score=Number(window.localStorage.getItem('score')) ?? 0;
+    scoreContain.innerText=score;
     option.innerHTML=null;
     randomcolor=genrateRandomColorRGB();
     colorcode.innerText=randomcolor;
