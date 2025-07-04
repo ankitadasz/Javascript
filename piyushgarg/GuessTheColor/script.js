@@ -14,7 +14,7 @@ function genrateRandomColorRGB() {
 }
  function validateResult(el){
    console.log(el.target);
-   
+   const selectedColor=el.target.style.backgroundColor;
  }
 function startGame(){
     randomcolor=genrateRandomColorRGB();
