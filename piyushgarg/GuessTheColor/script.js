@@ -23,9 +23,14 @@ function incrementStore(){
    if((randomcolor===selectedColor)){
     incrementStore();
    }
-   
+   else{
+   score=0;
+   }
+   window.localStorage('score',score)
+   startGame() ;
  }
 function startGame(){
+    option.innerHTML=null;
     randomcolor=genrateRandomColorRGB();
     colorcode.innerText=randomcolor;
     
