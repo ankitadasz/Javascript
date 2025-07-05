@@ -6,7 +6,16 @@
     align-items: center;
 }
 .calci{
-    border: 2px solid black;
+    
     height: 350px;
     width: 191px;
+}
+
+.calc-btns{
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.calc-btns:hover{
+    background-color: yellow;
 }
